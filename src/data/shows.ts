@@ -3,7 +3,7 @@ import { Show } from '../components/ShowCard';
 export const shows: Show[] = [
   {
     date: "20 Maio",
-    venue: "Teatro Municipal de São Paulo",
+    venue: "Teatro Municipal",
     city: "São Paulo, SP",
     time: "20:30",
     ticketUrl: "https://example.com/tickets/1"
