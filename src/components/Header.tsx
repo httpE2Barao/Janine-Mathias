@@ -7,6 +7,14 @@ export function Header() {
   const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
 
+  const menuItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'Sobre', href: '#about' },
+    { label: 'Lançamentos', href: '#releases' },
+    { label: 'Shows', href: '#shows' },
+    { label: 'Contato', href: '#contact' },
+  ];
+
   useEffect(() => {
     if (!isHomePage) {
       setShowTitle(true);
@@ -64,10 +72,13 @@ export function Header() {
         )}
         <nav className={`flex ${showTitle && 'justify-between'} w-full`}>
           <ul className={`flex ${showTitle ? 'justify-end' : 'justify-around'} text-lg space-x-4 gap-4 w-full`}>
-            <li><a href="#home" onClick={(e) => handleNavigation(e, '#home')} className="hover:underline">Inicio</a></li>
-            <li><a href="#about" onClick={(e) => handleNavigation(e, '#about')} className="hover:underline">Sobre mim</a></li>
-            <li><a href="#releases" onClick={(e) => handleNavigation(e, '#releases')} className="hover:underline">Álbuns</a></li>
-            <li><a href="#contact" onClick={(e) => handleNavigation(e, '#contact')} className="hover:underline">Contatos</a></li>
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <a href={item.href} onClick={(e) => handleNavigation(e, item.href)} className="hover:underline">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

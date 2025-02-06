@@ -34,8 +34,8 @@ function HomePage() {
         />
       </div>
 
-      <div className='pt-10' id="releases">
-        <section className="bg-white py-20 px-4">
+      <div className='pt-10 md:pt-28' id="releases">
+        <section className="bg-white px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Últimos Lançamentos</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -51,7 +51,7 @@ function HomePage() {
         </section>
       </div>
 
-      <section className="py-10 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
+      <section className="pt-10 md:pt-28 py-10 px-4 bg-gradient-to-b from-purple-50 to-pink-50" id="shows">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Próximos Shows</h2>
           <div className="space-y-6">
@@ -62,10 +62,24 @@ function HomePage() {
         </div>
       </section>
 
+      <div id="releases" className="max-w-[700px] mx-auto my-10 px-4">
+            <div className="instagram-reels">
+              <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
+                <iframe
+                  src="https://www.instagram.com/reel/DFtV9LBsAEP/embed"
+                  className="absolute top-0 left-0 w-full h-full"
+                  frameBorder="0"
+                  scrolling="no"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
       <div className='pt-6' id="contact">
-        <section className="bg-white py-20 px-4">
+        <section className="bg-white pb-10 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Contate a equipe da nega</h2>
+            <h2 className="text-4xl font-bold py-12 text-center text-gray-800">Contate a equipe da nega!</h2>
             <SocialLinks
               links={{
                 instagram: "https://instagram.com/janinemathias",

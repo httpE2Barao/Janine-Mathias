@@ -12,7 +12,7 @@ interface SocialLinksProps {
 export function SocialLinks({ links }: SocialLinksProps) {
   return (
     <div className="text-center">
-      <div className="flex justify-center space-x-8 mb-12">
+      <div className="flex justify-center gap-3 space-x-8 mb-12">
         {links.instagram && (
           <a
             href={links.instagram}
@@ -53,7 +53,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
       </div>
 
       <div className="max-w-md mx-auto mb-12">
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg font-semibold text-gray-600 mb-8">
           Para contratações e parcerias, entre em contato:
         </p>
         <a
@@ -65,21 +65,6 @@ export function SocialLinks({ links }: SocialLinksProps) {
           <span>{links.email}</span>
         </a>
       </div>
-
-      <div className="max-w-[700px] mx-auto mb-12 px-4">
-        <div className="instagram-reels">
-          <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
-            <iframe 
-              src="https://www.instagram.com/reel/DFtV9LBsAEP/embed" 
-              className="absolute top-0 left-0 w-full h-full"
-              frameBorder="0" 
-              scrolling="no" 
-              allow="encrypted-media"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
     </div>
   );
 }
