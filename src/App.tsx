@@ -38,7 +38,16 @@ function HomePage() {
 
       <section id="releases" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50 scroll-section">
         <div className="container-width">
-          <h2 className="section-title">Últimos Lançamentos</h2>
+          
+          {/* Box do Spotify para Mobile */}
+          <div className="md:hidden">
+            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 mb-12">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">As mais tocadas no Spotify</h3>
+              <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
+            </div>
+          </div>
+
+          <h2 className="section-title pt-10">Últimos Lançamentos</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             {releases.map((release, index) => (
               <div className="transform hover:scale-105 transition-transform duration-300" key={index}>
@@ -47,9 +56,12 @@ function HomePage() {
             ))}
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl p-8 mt-20">
-            <h3 className="text-3xl font-bold mb-8 text-center">As mais tocadas no Spotify</h3>
-            <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
+          {/* Box do Spotify para Desktop */}
+          <div className="hidden md:block">
+            <div className="bg-white rounded-2xl shadow-xl p-8 mt-20">
+              <h3 className="text-3xl font-bold mb-8 text-center">As mais tocadas no Spotify</h3>
+              <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
+            </div>
           </div>
         </div>
       </section>
