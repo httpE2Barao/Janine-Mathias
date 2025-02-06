@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+    background-color: transparent;
+    color: white;
+    mix-blend-mode: difference;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .header.scrolled {
+    background-color: white;
+    color: black;
+  }
+  

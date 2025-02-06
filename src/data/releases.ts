@@ -5,7 +5,7 @@ export const releases: Release[] = [
     id: "dende",
     title: "Dendê",
     cover: "/images/capa-dende.png",
-    year: "2024",
+    year: "2018",
     description: "Um álbum que celebra a riqueza da música brasileira através de uma perspectiva contemporânea. Janine Mathias traz sua interpretação única de clássicos e composições originais que mesclam MPB, samba e soul music.",
     tracks: [
       { title: "Coração Brasileiro", duration: "4:15" },
