@@ -3,17 +3,47 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: #8B5CF6;
+  --secondary-color: #EC4899;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --spacing-section: 6rem;
   scroll-behavior: smooth;
 }
 
+/* Estilos base */
+.section-spacing {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+.container-width {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-16;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Header styles */
 .header {
-  background-color: transparent;
-  color: white;
-  mix-blend-mode: difference;
-  transition: background-color 0.3s, color 0.3s;
+  @apply backdrop-blur-sm bg-white/30;
+  transition: all 0.3s ease;
 }
 
 .header.scrolled {
-  background-color: white;
-  color: black;
+  @apply bg-white/95 shadow-md;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }

@@ -1,69 +1,78 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Hero } from './components/Hero';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { AlbumWireframe } from './components/AlbumWireframe';
 import { Biography } from './components/Biography';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
 import { ReleaseCard } from './components/ReleaseCard';
 import { ShowCard } from './components/ShowCard';
 import { SocialLinks } from './components/SocialLinks';
-import { ReleasePage } from './pages/ReleasePage';
 import { releases } from './data/releases';
 import { shows } from './data/shows';
-import { AlbumWireframe } from './components/AlbumWireframe';
-import { Header } from './components/Header';
+import { ReleasePage } from './pages/ReleasePage';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50">
-      <div id="home">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-pink-50">
+      <section id="home" className="relative h-screen">
         <Hero
           name="Janine Mathias"
           title="Cantora • Compositora • Intérprete"
           backgroundImage="/images/banner-cropped.jpg"
         />
-      </div>
+      </section>
 
-      <div className='pt-10' id="about">
-        <Biography
-          image="/images/sobre-banner.png"
-          content={{
-            title: "Sobre Mim",
-            paragraphs: [
-              "Com uma voz única e presença marcante, venho encantando o público com minha música que mistura MPB, soul e elementos contemporâneos. Minha jornada musical começou nas raízes do samba e da bossa nova, evoluindo para um som próprio que transcende gêneros.",
-              "Através das minhas composições, busco criar conexões profundas e emocionais, trazendo histórias que falam sobre amor, vida e experiências humanas universais. Cada apresentação é uma oportunidade de compartilhar não apenas música, mas também momentos de verdadeira conexão com o público."
-            ]
-          }}
-        />
-      </div>
+      <section id="about" className="section-spacing bg-white">
+        <div className="container-width">
+          <h2 className="section-title">Sobre Mim</h2>
+          <Biography
+            image="/images/sobre-banner.png"
+            content={{
+              title: "Sobre Mim",
+              paragraphs: [
+                "Com uma voz única e presença marcante, venho encantando o público com minha música que mistura MPB, soul e elementos contemporâneos. Minha jornada musical começou nas raízes do samba e da bossa nova, evoluindo para um som próprio que transcende gêneros.",
+                "Através das minhas composições, busco criar conexões profundas e emocionais, trazendo histórias que falam sobre amor, vida e experiências humanas universais. Cada apresentação é uma oportunidade de compartilhar não apenas música, mas também momentos de verdadeira conexão com o público."
+              ]
+            }}
+          />
+        </div>
+      </section>
 
-      <div className='pt-10 md:pt-28' id="releases">
-        <section className="bg-white px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Últimos Lançamentos</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {releases.map((release, index) => (
-                <ReleaseCard key={index} release={release} />
-              ))}
-            </div>
-            <div className='mx-auto mt-20 w-full'>
-              <h3 className="text-3xl font-bold mb-4">As mais tocadas no Spotify</h3>
-              <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
-            </div>
+      <section id="releases" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="container-width">
+          <h2 className="section-title">Últimos Lançamentos</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            {releases.map((release, index) => (
+              <div className="transform hover:scale-105 transition-transform duration-300" key={index}>
+                <ReleaseCard release={release} />
+              </div>
+            ))}
           </div>
-        </section>
-      </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl p-8 mt-20">
+            <h3 className="text-3xl font-bold mb-8 text-center">As mais tocadas no Spotify</h3>
+            <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
+          </div>
+        </div>
+      </section>
 
-      <section className="pt-10 md:pt-28 py-10 px-4 bg-gradient-to-b from-purple-50 to-pink-50" id="shows">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Próximos Shows</h2>
-          <div className="space-y-6">
+      <section id="shows" className="section-spacing bg-white">
+        <div className="container-width">
+          <h2 className="section-title">Próximos Shows</h2>
+          <div className="grid gap-6">
             {shows.map((show, index) => (
-              <ShowCard key={index} show={show} />
+              <div className="transform hover:-translate-y-1 transition-transform duration-300" key={index}>
+                <ShowCard show={show} />
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <div id="releases" className="max-w-[700px] mx-auto my-10 px-4">
-            <div className="instagram-reels">
+      <section id="media" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="container-width">
+          <h2 className="section-title">Mídia</h2>
+          <div className="max-w-[700px] mx-auto">
+            <div className="instagram-reels rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
                 <iframe
                   src="https://www.instagram.com/reel/DFtV9LBsAEP/embed"
@@ -75,26 +84,26 @@ function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-      <div className='pt-6' id="contact">
-        <section className="bg-white pb-10 px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold py-12 text-center text-gray-800">Contate a equipe da nega!</h2>
-            <SocialLinks
-              links={{
-                instagram: "https://instagram.com/janinemathias",
-                youtube: "https://www.youtube.com/channel/UCGEC1gpceg6DMhM7sDtXjZA",
-                spotify: "https://open.spotify.com/intl-pt/artist/0IVFb2BEbIsxxhtKw3Yyus",
-                email: "contatojaninemathias@gmail.com"
-              }}
-            />
-          </div>
-        </section>
-      </div>
+      <section id="contact" className="section-spacing bg-white">
+        <div className="container-width">
+          <h2 className="section-title">Entre em Contato</h2>
+          <SocialLinks
+            links={{
+              instagram: "https://instagram.com/janinemathias",
+              youtube: "https://www.youtube.com/channel/UCGEC1gpceg6DMhM7sDtXjZA",
+              spotify: "https://open.spotify.com/intl-pt/artist/0IVFb2BEbIsxxhtKw3Yyus",
+              email: "contatojaninemathias@gmail.com"
+            }}
+          />
+        </div>
+      </section>
 
-      <footer className="bg-gray-900 text-white py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© 2025 Janine Mathias. Todos os direitos reservados.</p>
+      <footer className="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-12 px-4">
+        <div className="container-width text-center">
+          <p className="text-gray-200">© 2025 Janine Mathias. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
