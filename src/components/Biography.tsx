@@ -1,7 +1,6 @@
 interface BiographyProps {
   image: string;
   content: {
-    title: string;
     paragraphs: string[];
   };
 }
@@ -19,9 +18,8 @@ export function Biography({ image, content }: BiographyProps) {
             />
           </div>
           <div>
-            <h2 className="text-4xl font-bold mb-6 text-gray-800">{content.title}</h2>
             {content.paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-lg text-gray-600 mb-6 last:mb-0">
+              <p key={index} className="text-lg md:text-xl text-gray-600 mb-6 last:mb-0">
                 {paragraph}
               </p>
             ))}

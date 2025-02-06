@@ -13,7 +13,7 @@ import { ReleasePage } from './pages/ReleasePage';
 function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-pink-50">
-      <section id="home" className="relative h-screen">
+      <section id="home" className="relative h-screen scroll-section">
         <Hero
           name="Janine Mathias"
           title="Cantora • Compositora • Intérprete"
@@ -21,13 +21,12 @@ function HomePage() {
         />
       </section>
 
-      <section id="about" className="section-spacing bg-white">
+      <section id="about" className="section-spacing bg-white scroll-section">
         <div className="container-width">
           <h2 className="section-title">Sobre Mim</h2>
           <Biography
             image="/images/sobre-banner.png"
             content={{
-              title: "Sobre Mim",
               paragraphs: [
                 "Com uma voz única e presença marcante, venho encantando o público com minha música que mistura MPB, soul e elementos contemporâneos. Minha jornada musical começou nas raízes do samba e da bossa nova, evoluindo para um som próprio que transcende gêneros.",
                 "Através das minhas composições, busco criar conexões profundas e emocionais, trazendo histórias que falam sobre amor, vida e experiências humanas universais. Cada apresentação é uma oportunidade de compartilhar não apenas música, mas também momentos de verdadeira conexão com o público."
@@ -37,7 +36,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="releases" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50">
+      <section id="releases" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50 scroll-section">
         <div className="container-width">
           <h2 className="section-title">Últimos Lançamentos</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -55,7 +54,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="shows" className="section-spacing bg-white">
+      <section id="shows" className="section-spacing bg-white scroll-section">
         <div className="container-width">
           <h2 className="section-title">Próximos Shows</h2>
           <div className="grid gap-6">
@@ -68,9 +67,9 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="media" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50">
+      <section id="media" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50 scroll-section">
         <div className="container-width">
-          <h2 className="section-title">Mídia</h2>
+          <h2 className="section-title">Entre para a família da nega!</h2>
           <div className="max-w-[700px] mx-auto">
             <div className="instagram-reels rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
@@ -87,7 +86,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="contact" className="section-spacing bg-white">
+      <section id="contact" className="section-spacing bg-white scroll-section">
         <div className="container-width">
           <h2 className="section-title">Entre em Contato</h2>
           <SocialLinks
