@@ -69,7 +69,7 @@ function HomePage() {
 
       <section id="media" className="section-spacing bg-gradient-to-r from-purple-50 to-pink-50 scroll-section">
         <div className="container-width">
-          <h2 className="section-title">Entre para a família da nega!</h2>
+          <h2 className="section-title">Entre na família da nega!</h2>
           <div className="max-w-[700px] mx-auto">
             <div className="instagram-reels rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
