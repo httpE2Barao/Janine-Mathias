@@ -17,7 +17,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="header bg-transparent py-5 fixed w-full z-20 transition-colors duration-300">
+    <header className="header bg-transparent py-5 fixed w-full z-20 transition-colors duration-300 hidden md:block">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4 w-full">
         {showTitle && <h1 className="text-3xl font-bold hover:cursor-default">Janine Mathias</h1>}
         <nav className={`flex ${showTitle && 'justify-between'} w-full`}>
