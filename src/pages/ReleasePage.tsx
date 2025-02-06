@@ -1,8 +1,16 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { releases } from '../data/releases';
 import { AlbumWireframe } from '../components/AlbumWireframe';
 
 export function ReleasePage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+  }, []);
+
   const { id } = useParams<{ id: string }>();
   const release = releases.find((release) => release.id === id);
 
@@ -11,7 +19,7 @@ export function ReleasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 py-20 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 pt-32 pb-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           {/* Hero Section */}

@@ -43,8 +43,8 @@ function HomePage() {
                 <ReleaseCard key={index} release={release} />
               ))}
             </div>
-            <div className='mx-auto mt-12 w-full'>
-              <h3 className="text-2xl font-bold mb-4">As mais tocadas no Spotify</h3>
+            <div className='mx-auto mt-20 w-full'>
+              <h3 className="text-3xl font-bold mb-4">As mais tocadas no Spotify</h3>
               <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
             </div>
           </div>
@@ -65,7 +65,7 @@ function HomePage() {
       <div className='pt-6' id="contact">
         <section className="bg-white py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Contato</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Entre em contato!</h2>
             <SocialLinks
               links={{
                 instagram: "https://instagram.com/janinemathias",
@@ -89,14 +89,12 @@ function HomePage() {
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/release/:id" element={<ReleasePage />} />
-        </Routes>
-      </Router>
-    </>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/release/:id" element={<ReleasePage />} />
+      </Routes>
+    </Router>
   );
 }
