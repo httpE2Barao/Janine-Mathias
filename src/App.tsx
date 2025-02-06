@@ -17,7 +17,7 @@ function HomePage() {
         <Hero
           name="Janine Mathias"
           title="Cantora • Compositora • Intérprete"
-          backgroundImage="/images/main-banner.png"
+          backgroundImage="/images/banner-cropped.jpg"
         />
       </div>
 
@@ -65,7 +65,7 @@ function HomePage() {
       <div className='pt-6' id="contact">
         <section className="bg-white py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Entre em contato!</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Contate a equipe da nega</h2>
             <SocialLinks
               links={{
                 instagram: "https://instagram.com/janinemathias",

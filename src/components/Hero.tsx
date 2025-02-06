@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface HeroProps {
   name: string;
   title: string;

@@ -21,7 +21,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <Instagram className="w-8 h-8" />
+            <Instagram className="w-12 h-12" />
           </a>
         )}
         {links.youtube && (
@@ -32,7 +32,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
             rel="noopener noreferrer"
             aria-label="YouTube"
           >
-            <Youtube className="w-8 h-8" />
+            <Youtube className="w-12 h-12" />
           </a>
         )}
         {links.spotify && (
@@ -46,7 +46,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
             <img
               src="/images/spotify-logo.svg"
               alt="Spotify"
-              className="w-8 h-8"
+              className="w-12 h-12"
             />
           </a>
         )}
@@ -67,9 +67,8 @@ export function SocialLinks({ links }: SocialLinksProps) {
       </div>
 
       <div className="max-w-[700px] mx-auto mb-12 px-4">
-        <h3 className="text-2xl font-bold mb-4">Instagram Reels</h3>
         <div className="instagram-reels">
-          <div className="relative w-full overflow-hidden" style={{ paddingBottom: '177.77%' }}>
+          <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
             <iframe 
               src="https://www.instagram.com/reel/DFtV9LBsAEP/embed" 
               className="absolute top-0 left-0 w-full h-full"
