@@ -69,7 +69,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
       <div className="max-w-[700px] mx-auto mb-12">
         <h3 className="text-2xl font-bold mb-4">Instagram Reels</h3>
         <div className="instagram-reels p-5">
-          <iframe src="https://www.instagram.com/reel/C9dYeovP15o/embed" width="700" height="1100" frameBorder="0" scrolling="no" allowTransparency allow="encrypted-media"></iframe>
+          <iframe src="https://www.instagram.com/reel/DFtV9LBsAEP/embed" width="700" height="1100" frameBorder="0" scrolling="no" allowTransparency allow="encrypted-media"></iframe>
         </div>
       </div>
 
