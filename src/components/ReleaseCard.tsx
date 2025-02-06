@@ -15,6 +15,7 @@ export interface Release {
     url: string;
     thumbnail: string;
   }>;
+  spotifyLink: string;
 }
 
 interface ReleaseCardProps {

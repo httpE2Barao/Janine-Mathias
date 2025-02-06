@@ -1,10 +1,10 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { releases } from '../data/releases';
+import { AlbumWireframe } from '../components/AlbumWireframe';
 
 export function ReleasePage() {
   const { id } = useParams<{ id: string }>();
-  const release = releases.find(r => r.id === id);
+  const release = releases.find((release) => release.id === id);
 
   if (!release) {
     return <div>Release not found</div>;
@@ -38,23 +38,9 @@ export function ReleasePage() {
               </div>
 
               <div className="mb-12">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Faixas</h2>
-                <div className="space-y-4">
-                  {release.tracks.map((track, index) => (
-                    <div 
-                      key={index}
-                      className="flex justify-between items-center p-4 bg-gray-50 rounded-lg"
-                    >
-                      <div className="flex items-center">
-                        <span className="text-purple-600 font-semibold mr-4">
-                          {(index + 1).toString().padStart(2, '0')}
-                        </span>
-                        <span className="text-gray-800">{track.title}</span>
-                      </div>
-                      <span className="text-gray-600">{track.duration}</span>
-                    </div>
-                  ))}
-                </div>
+                <AlbumWireframe
+                  spotifyLink={release.spotifyLink}
+                />
               </div>
 
               {release.videos && release.videos.length > 0 && (

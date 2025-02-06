@@ -25,7 +25,8 @@ export const releases: Release[] = [
         url: "https://youtube.com/watch?v=example2",
         thumbnail: "https://images.unsplash.com/photo-1619983081583-6c3c6c895ed5?auto=format&fit=crop&q=80"
       }
-    ]
+    ],
+    spotifyLink: "https://open.spotify.com/embed/album/2uj1zY8Y4pNcmeZZCGLIvr?utm_source=generator"
   },
   {
     id: "me ilumina",
@@ -46,7 +47,8 @@ export const releases: Release[] = [
         url: "https://youtube.com/watch?v=example3",
         thumbnail: "https://images.unsplash.com/photo-1619983081583-6c3c6c895ed5?auto=format&fit=crop&q=80"
       }
-    ]
+    ],
+    spotifyLink: "https://open.spotify.com/embed/album/3aXGgF67iw41UoHqD22x9b?utm_source=generator"
   },
   {
     id: "barracao e seu",
@@ -60,6 +62,7 @@ export const releases: Release[] = [
       { title: "Madrugada", duration: "3:42" },
       { title: "Céu de Estrelas", duration: "4:18" },
       { title: "Nova Aurora", duration: "3:55" }
-    ]
+    ],
+    spotifyLink: "https://open.spotify.com/embed/album/2dM726TT3EeEEVwpkyX065?utm_source=generator"
   }
 ];

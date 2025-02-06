@@ -7,17 +7,18 @@ import { SocialLinks } from './components/SocialLinks';
 import { ReleasePage } from './pages/ReleasePage';
 import { releases } from './data/releases';
 import { shows } from './data/shows';
+import { AlbumWireframe } from './components/AlbumWireframe';
 
 function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50">
-      <Hero 
+      <Hero
         name="Janine Mathias"
         title="Cantora • Compositora • Intérprete"
         backgroundImage="/images/main-banner.png"
       />
 
-      <Biography 
+      <Biography
         image="/images/sobre-banner.png"
         content={{
           title: "Sobre Mim",
@@ -36,10 +37,14 @@ function HomePage() {
               <ReleaseCard key={index} release={release} />
             ))}
           </div>
+          <div className='mx-auto mt-12 w-full'>
+            <h3 className="text-2xl font-bold mb-4">As mais tocadas no Spotify</h3>
+            <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus'/>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
+      <section className="py-10 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Próximos Shows</h2>
           <div className="space-y-6">
@@ -53,7 +58,7 @@ function HomePage() {
       <section className="bg-white py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">Contato</h2>
-          <SocialLinks 
+          <SocialLinks
             links={{
               instagram: "https://instagram.com/janinemathias",
               youtube: "https://www.youtube.com/channel/UCGEC1gpceg6DMhM7sDtXjZA",

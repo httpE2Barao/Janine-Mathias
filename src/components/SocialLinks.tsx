@@ -51,7 +51,8 @@ export function SocialLinks({ links }: SocialLinksProps) {
           </a>
         )}
       </div>
-      <div className="max-w-md mx-auto">
+
+      <div className="max-w-md mx-auto mb-12">
         <p className="text-lg text-gray-600 mb-8">
           Para contratações e parcerias, entre em contato:
         </p>
@@ -64,6 +65,14 @@ export function SocialLinks({ links }: SocialLinksProps) {
           <span>{links.email}</span>
         </a>
       </div>
+
+      <div className="max-w-[700px] mx-auto mb-12">
+        <h3 className="text-2xl font-bold mb-4">Instagram Reels</h3>
+        <div className="instagram-reels p-5">
+          <iframe src="https://www.instagram.com/reel/C9dYeovP15o/embed" width="700" height="1100" frameBorder="0" scrolling="no" allowTransparency allow="encrypted-media"></iframe>
+        </div>
+      </div>
+
     </div>
   );
 }
