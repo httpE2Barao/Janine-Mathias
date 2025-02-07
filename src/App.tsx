@@ -18,6 +18,7 @@ function HomePage() {
           name="Janine Mathias"
           title="Cantora • Compositora • Intérprete"
           backgroundImage="/images/banner-cropped.jpg"
+          ticketLink="#shows" 
         />
       </section>
 

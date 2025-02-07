@@ -4,11 +4,13 @@ interface HeroProps {
   name: string;
   title: string;
   backgroundImage: string;
+  ticketLink?: string; // Nova prop opcional
 }
 
-export function Hero({ name, title, backgroundImage }: HeroProps) {
-  const scrollToReleases = () => {
-    const releasesSection = document.querySelector('#releases');
+export function Hero({ name, title, backgroundImage, ticketLink }: HeroProps) {
+
+  const scrollTo = ( props: String ) => {
+    const releasesSection = document.querySelector(`#${props}`);
     if (releasesSection) {
       releasesSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -30,13 +32,23 @@ export function Hero({ name, title, backgroundImage }: HeroProps) {
         <p className="text-xl md:text-2xl text-center max-w-2xl mx-auto text-gray-200 mb-8">
           {title}
         </p>
-        <button
-          onClick={scrollToReleases}
-          className="flex items-center gap-3 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white border border-white/30 hover:bg-white/30 transition-colors duration-300"
-        >
-          <Music4 className="w-5 h-5" />
-          <span>Ver Lançamentos</span>
-        </button>
+        <div className="flex gap-4 justify-center">
+          <button
+            onClick={() => scrollTo('releases')}
+            className="flex items-center gap-3 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white border border-white/30 hover:bg-white/30 transition-colors duration-300"
+          >
+            <Music4 className="w-5 h-5" />
+            <span>Ver Lançamentos</span>
+          </button>
+          {ticketLink && (
+            <button
+              onClick={() => scrollTo('shows')}
+              className="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors"
+            >
+              Comprar Ingressos
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
