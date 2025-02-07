@@ -67,10 +67,10 @@ export function Header() {
               }
             }}
           >
-            Janine Mathias
+          Janine Mathias
           </h1>
         )}
-        <nav className={`flex ${showTitle && 'justify-between'} w-full`}>
+        <nav className={`flex ${showTitle && 'justify-between'} w-full font-semibold`}>
           <ul className={`flex ${showTitle ? 'justify-end' : 'justify-around'} text-lg space-x-4 gap-4 w-full`}>
             {menuItems.map((item) => (
               <li key={item.href}>
