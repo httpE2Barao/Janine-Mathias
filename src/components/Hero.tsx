@@ -32,7 +32,7 @@ export function Hero({ name, title, backgroundImage }: HeroProps) {
         </p>
         <button
           onClick={scrollToReleases}
-          className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+          className="flex items-center gap-3 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white border border-white/30 hover:bg-white/30 transition-colors duration-300"
         >
           <Music4 className="w-5 h-5" />
           <span>Ver Lançamentos</span>
