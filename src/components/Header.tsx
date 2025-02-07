@@ -71,7 +71,7 @@ export function Header() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4 w-full">
         {showTitle && (
           <h1 
-            className={`text-3xl font-bold hover:cursor-pointer ${
+            className={`text-3xl font-bold hover:cursor-pointer w-96  ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}
             onClick={() => {
@@ -85,7 +85,7 @@ export function Header() {
           Janine Mathias
           </h1>
         )}
-        <nav className={`flex ${showTitle && 'justify-between'} w-full font-semibold`}>
+        <nav className={`flex ${showTitle && 'justify-between'} w-full font-[400]`}>
           <ul className={`flex ${showTitle ? 'justify-end' : 'justify-around'} text-lg space-x-4 gap-4 w-full`}>
             {menuItems.map((item) => (
               <li key={item.href}>

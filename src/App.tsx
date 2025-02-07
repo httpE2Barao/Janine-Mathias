@@ -48,7 +48,7 @@ function HomePage() {
             </div>
           </div>
 
-          <h2 className="section-title pt-10">Últimos Lançamentos</h2>
+          <h2 className="section-title">Últimos Lançamentos</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             {releases.map((release, index) => (
               <div className="transform hover:scale-105 transition-transform duration-300" key={index}>

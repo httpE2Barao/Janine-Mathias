@@ -19,7 +19,7 @@ export function ReleasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 pt-32 pb-20 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 pt-5 md:pt-32 pb-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           {/* Hero Section */}

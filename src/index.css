@@ -50,19 +50,19 @@
 
 /* Scroll Padding Adjustment */
 html {
-  scroll-padding-top: 50px; /* Ajuste geral para todas as seções */
+  scroll-padding-top: 30px; /* Ajuste geral para todas as seções */
 }
 
 .scroll-section {
-  scroll-margin-top: 50px; /* Margem específica para seções */
+  scroll-margin-top: 30px; /* Margem específica para seções */
 }
 
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 40px;
+    scroll-padding-top: 0px;
   }
   .scroll-section {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 0px;
   }
 }

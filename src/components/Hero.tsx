@@ -28,7 +28,7 @@ export function Hero({ name, title, backgroundImage, ticketLink }: HeroProps) {
       </div>
       
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 text-center">{name}</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium mb-4 text-center tracking-wide">{name}</h1>
         <p className="text-xl md:text-2xl text-center max-w-2xl mx-auto text-gray-200 mb-8">
           {title}
         </p>
