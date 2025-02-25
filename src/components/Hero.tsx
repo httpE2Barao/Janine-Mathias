@@ -4,7 +4,7 @@ interface HeroProps {
   name: string;
   title: string;
   backgroundImage: string;
-  ticketLink?: string; // Nova prop opcional
+  ticketLink?: string; 
 }
 
 export function Hero({ name, title, backgroundImage, ticketLink }: HeroProps) {
