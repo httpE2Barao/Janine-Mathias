@@ -87,7 +87,7 @@ function HomePage() {
             <div className="instagram-reels rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full overflow-hidden" style={{ paddingBottom: '157.77%' }}>
                 <iframe
-                  src="https://www.instagram.com/reel/DFtV9LBsAEP/embed"
+                  src="https://www.instagram.com/reel/DGO21c0Rm4W/embed"
                   className="absolute top-0 left-0 w-full h-full"
                   frameBorder="0"
                   scrolling="no"
@@ -105,7 +105,7 @@ function HomePage() {
           <SocialLinks
             links={{
               instagram: "https://instagram.com/janinemathias",
-              youtube: "https://www.youtube.com/channel/UCGEC1gpceg6DMhM7sDtXjZA",
+              youtube: "https://youtube.com/channel/UCGEC1gpceg6DMhM7sDtXjZA",
               spotify: "https://open.spotify.com/intl-pt/artist/0IVFb2BEbIsxxhtKw3Yyus",
               email: "contatojaninemathias@gmail.com"
             }}
