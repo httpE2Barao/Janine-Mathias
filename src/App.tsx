@@ -42,7 +42,7 @@ function HomePage() {
           
           {/* Box do Spotify para Mobile */}
           <div className="md:hidden">
-            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 mb-12">
+            <div className="md:bg-white rounded-2xl md:p-4 sm:p-6 mb-12">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">As mais tocadas no Spotify</h3>
               <AlbumWireframe spotifyLink='https://open.spotify.com/embed/artist/0IVFb2BEbIsxxhtKw3Yyus' />
             </div>
@@ -113,9 +113,10 @@ function HomePage() {
         </div>
       </section>
 
-      <footer className="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-12 px-4">
-        <div className="container-width text-center">
+      <footer className="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-12 px-4 hover:cursor-default">
+        <div className="container-width text-center flex flex-col gap-4">
           <p className="text-gray-200">© 2025 Janine Mathias. Todos os direitos reservados.</p>
+          <p className='text-gray-300'>Site desenvolvido por <a href="https://e2-barao.vercel.app/" className='underline gradient-text'>Elias Barão</a></p>
         </div>
       </footer>
     </div>

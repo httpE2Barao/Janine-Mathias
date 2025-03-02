@@ -32,7 +32,7 @@ export function Hero({ name, title, backgroundImage, ticketLink }: HeroProps) {
         <p className="text-xl md:text-2xl text-center max-w-2xl mx-auto text-gray-200 mb-8">
           {title}
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
           <button
             onClick={() => scrollTo('releases')}
             className="flex items-center gap-3 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white border border-white/30 hover:bg-white/30 transition-colors duration-300"

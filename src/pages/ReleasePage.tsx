@@ -1,3 +1,4 @@
+// ReleasePage.tsx
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { releases } from '../data/releases';
@@ -19,7 +20,7 @@ export function ReleasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 pt-5 md:pt-32 pb-20 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 pt-5 md:pt-32 pb-20 px-4 max-sm:p-0">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           {/* Hero Section */}
@@ -37,8 +38,8 @@ export function ReleasePage() {
             </div>
           </div>
 
-          {/* Content */}
-          <div className="p-8">
+          {/* Conteúdo */}
+          <div className="p-8 max-xs:p-2 max-sm:p-4">
             <div className="max-w-3xl mx-auto">
               <div className="mb-12">
                 <h2 className="text-2xl font-bold mb-4 text-gray-800">Sobre o Álbum</h2>
@@ -46,9 +47,7 @@ export function ReleasePage() {
               </div>
 
               <div className="mb-12">
-                <AlbumWireframe
-                  spotifyLink={release.spotifyLink}
-                />
+                <AlbumWireframe spotifyLink={release.spotifyLink} />
               </div>
 
               {release.videos && release.videos.length > 0 && (

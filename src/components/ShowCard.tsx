@@ -31,7 +31,7 @@ export function ShowCard({ show }: ShowCardProps) {
           href={show.ticketUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 sm:mt-0 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
+          className="ml-auto mt-4 sm:mt-0 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
         >
           Comprar Ingresso
         </a>

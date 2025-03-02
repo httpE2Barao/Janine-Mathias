@@ -20,10 +20,16 @@
 .container-width {
   @apply max-w-6xl mx-auto px-4;
 }
-
 .section-title {
-  @apply text-4xl md:text-5xl font-bold text-center mb-16;
+  @apply text-4xl md:text-5xl font-bold text-center mb-12 leading-tight;
+  /* Gradiente */
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-text:hover {
+  background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
   -webkit-background-clip: text;
   color: transparent;
 }
