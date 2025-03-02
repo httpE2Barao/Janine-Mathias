@@ -20,7 +20,6 @@ export const shows: Show[] = [
     venue: "O tal do Quintal",
     city: "Curitiba, PR",
     time: "21:30",
-    ticketUrl: "https://example.com/tickets/3"
   },
   {
     date: "8 Março",
