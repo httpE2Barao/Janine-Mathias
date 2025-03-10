@@ -1,4 +1,7 @@
-  {
+import { Show } from '../components/ShowCard';
+
+export const shows: Show[] = [
+   {
     date: "21 Março",
     venue: "🥁 Oficina Nossos Tambores não se calam",
     city: "Conservatório de Mpb de Curitiba",
@@ -14,7 +17,7 @@
     ehOficina: true,
   },{
     date: "22 Março",
-    venue: "Bate Papo - A história do Samba e a cena artística de Curitiba.",
+    venue: "📢 Bate Papo - A história do Samba e a cena artística de Curitiba.",
     city: "Conservatório de Mpb de Curitiba",
     time: "10h às 12h"
   },{
@@ -30,3 +33,4 @@
     city: "Casa Hoffmann",
     time: "15h as 17h",
   },
+];
