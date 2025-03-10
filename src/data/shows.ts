@@ -14,7 +14,7 @@
     ehOficina: true,
   },{
     date: "22 Março",
-    venue: "📢 Bate Papo - A história do Samba e a cena artística de Curitiba.",
+    venue: "Bate Papo - A história do Samba e a cena artística de Curitiba.",
     city: "Conservatório de Mpb de Curitiba",
     time: "10h às 12h"
   },{
