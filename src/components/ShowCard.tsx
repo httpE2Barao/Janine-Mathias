@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar } from 'lucide-react';
 
 export interface Show {
@@ -7,6 +6,7 @@ export interface Show {
   city: string;
   time: string;
   ticketUrl?: string;
+  ehOficina?: boolean;
 }
 
 interface ShowCardProps {
@@ -27,13 +27,13 @@ export function ShowCard({ show }: ShowCardProps) {
         </div>
       </div>
       {show.ticketUrl && (
-        <a 
+        <a
           href={show.ticketUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="ml-auto mt-4 sm:mt-0 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
         >
-          Comprar Ingresso
+          {show.ehOficina ? 'Inscrever-se' : 'Comprar Ingresso'}
         </a>
       )}
     </div>

@@ -6,13 +6,15 @@ export const shows: Show[] = [
     venue: "Oficina Nossos Tambores não se calam",
     city: "Conservatório de Mpb de Curitiba",
     time: "17h às 21h",
-    ticketUrl: "https://forms.gle/WWQ1Vyj1eQrikPyt7"
+    ticketUrl: "https://forms.gle/WWQ1Vyj1eQrikPyt7",
+    ehOficina: true,
   },{
     date: "22 Março",
     venue: "Oficina Compondo em oralidades",
     city: "Conservatório de Mpb de Curitiba",
     time: "9h às 12h",
-    ticketUrl: "https://forms.gle/Dg4V36YsdAxvgH7M9"
+    ticketUrl: "https://forms.gle/Dg4V36YsdAxvgH7M9",
+    ehOficina: true,
   },{
     date: "22 Março",
     venue: "Bate Papo - A história do Samba e a cena artística de Curitiba.",
@@ -23,6 +25,7 @@ export const shows: Show[] = [
     venue: "Oficina de Dança - Método MP",
     city: "Casa Hoffmann",
     time: "Dia 22: 18h às 22h; Dia 23: 15h às 19h",
-    ticketUrl: "https://forms.gle/KDHTN9NMccQ9dwTm6"
+    ticketUrl: "https://forms.gle/KDHTN9NMccQ9dwTm6",
+    ehOficina: true,
   },
 ];
