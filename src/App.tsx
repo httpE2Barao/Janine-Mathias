@@ -69,7 +69,7 @@ function HomePage() {
 
       <section id="shows" className="section-spacing bg-white scroll-section">
         <div className="container-width">
-          <h2 className="section-title">Próximos Shows</h2>
+          <h2 className="section-title">Próximos Eventos</h2>
           <div className="grid gap-6">
             {shows.map((show, index) => (
               <div className="transform hover:-translate-y-1 transition-transform duration-300" key={index}>

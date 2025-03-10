@@ -22,7 +22,7 @@ export function ShowCard({ show }: ShowCardProps) {
           <span className="text-lg font-semibold text-gray-800">{show.date}</span>
         </div>
         <div>
-          <h3 className="text-xl font-bold text-gray-800">{show.venue}</h3>
+          <h3 className="text-xl font-bold text-gray-800 max-w-[500px]">{show.venue}</h3>
           <p className="text-gray-600">{show.city} • {show.time}</p>
         </div>
       </div>

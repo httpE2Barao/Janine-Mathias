@@ -45,8 +45,8 @@ export function Hero({ name, title, backgroundImage, ticketLink }: HeroProps) {
               onClick={() => scrollTo('shows')}
               className="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors"
             >
-              Comprar Ingressos
-            </button>
+              Comprar Ingressos 
+            </button> // inscreva-se
           )}
         </div>
       </div>
